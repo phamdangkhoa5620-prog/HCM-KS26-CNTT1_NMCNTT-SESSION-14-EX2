@@ -1,0 +1,18 @@
+Phần 1. Phân tích vi phạm “Quy tắc Cờ Đỏ Bảo mật”
+An đã vi phạm quy tắc bảo mật vì:
+- Rò rỉ dữ liệu: Chia sẻ danh sách số điện thoại khách hàng bằng chế độ “Anyone with the link” khiến bất kỳ ai có đường link đều có thể truy cập.
+- Cấp quyền quá mức: Quyền Editor cho phép người nhận chỉnh sửa hoặc xóa dữ liệu, trong khi không kiểm soát được người có đường link.
+- Mất kiểm soát truy cập: Link bị phát tán lên mạng xã hội, tạo điều kiện cho người lạ truy cập và phá hoại dữ liệu.
+- Vi phạm nguyên tắc đặc quyền tối thiểu: Chỉ nên cấp đúng quyền cần thiết cho từng người, không cấp quyền rộng hơn nhu cầu công việc.
+Phần 2. Thiết lập lại cấu trúc phân quyền chuẩn
+(1) Mức quyền nào cho cộng tác viên?
+- Commenter: Nếu cộng tác viên chỉ cần góp ý, nhận xét.
+- Editor: Chỉ cấp khi thực sự cần chỉnh sửa trực tiếp dữ liệu và được người quản lý cho phép.
+- Viewer: Nếu chỉ cần xem tài liệu.
+(2) Chế độ chia sẻ nào an toàn?
+- Chọn Restricted (Bị hạn chế).
+- Chỉ thêm đúng email của cộng tác viên được phép truy cập.
+- Không sử dụng “Anyone with the link” đối với dữ liệu khách hàng nhạy cảm.
+(3) Cần bật tính năng gì?
+- Bật tùy chọn ngăn Editor thay đổi quyền truy cập hoặc chia sẻ tài liệu (Editors can change permissions and share — tắt quyền này).
+- Nếu nền tảng hỗ trợ, giới hạn tải xuống, sao chép và in đối với người chỉ có quyền xem.
